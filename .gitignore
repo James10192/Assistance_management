@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js
+.next/
+out/
+build/
+
+# Environment variables (NEVER commit these)
+.env
+.env.local
+.env.*.local
+.env.production
+
+# Claude Code local settings (may contain tokens)
+.claude/settings.local.json
+
+# Database
+*.db
+*.sqlite
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Prisma
+prisma/migrations/dev.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo

@@ -1,0 +1,93 @@
+{
+  "permissions": {
+    "allow": [
+      "Edit",
+      "Bash(npm run *)",
+      "Bash(git *)",
+      "Bash(pnpm *)",
+      "Bash(gh *)",
+      "Bash(cd *)",
+      "Bash(ls *)",
+      "Bash(node *)",
+      "Bash(php *)",
+      "Bash(composer *)"
+    ]
+  },
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python .claude/ccnotify/hybrid-notify.py UserPromptSubmit"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python .claude/ccnotify/hybrid-notify.py Stop"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python .claude/ccnotify/hybrid-notify.py Notification"
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": ".claude/statusbar.sh",
+    "padding": 0
+  },
+  "allowedTools": [
+    "Bash(task-master:*)",
+    "Bash(git:*)",
+    "Bash(npm:*)",
+    "Bash(yarn:*)",
+    "Bash(php:*)",
+    "Bash(/mnt/c/xampp/php/php.exe:*)",
+    "Bash(composer:*)",
+    "Bash(ls:*)",
+    "Bash(cat:*)",
+    "Bash(grep:*)",
+    "Bash(mkdir:*)",
+    "Bash(curl:*)",
+    "Bash(find:*)",
+    "Bash(chmod:*)",
+    "Bash(ps:*)",
+    "Bash(kill:*)",
+    "Bash(node:*)",
+    "Bash(pnpm:*)",
+    "Write",
+    "Read",
+    "Edit",
+    "MultiEdit",
+    "Glob",
+    "Grep",
+    "LS",
+    "TodoWrite",
+    "WebFetch",
+    "WebSearch",
+    "mcp__*"
+  ],
+  "dangerouslySkipPermissions": true,
+  "theme": "dark",
+  "hasCompletedOnboarding": true,
+  "enabledPlugins": {
+    "superpowers-laravel@superpowers-laravel-marketplace": true
+  }
+}
