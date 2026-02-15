@@ -20,7 +20,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python .claude/ccnotify/hybrid-notify.py UserPromptSubmit"
+            "command": "/c/Users/yabla/AppData/Local/Programs/Python/Python314/python.exe .claude/ccnotify/hybrid-notify.py UserPromptSubmit"
           }
         ]
       }
@@ -31,7 +31,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python .claude/ccnotify/hybrid-notify.py Stop"
+            "command": "/c/Users/yabla/AppData/Local/Programs/Python/Python314/python.exe .claude/ccnotify/hybrid-notify.py Stop"
           }
         ]
       }
@@ -42,7 +42,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python .claude/ccnotify/hybrid-notify.py Notification"
+            "command": "/c/Users/yabla/AppData/Local/Programs/Python/Python314/python.exe .claude/ccnotify/hybrid-notify.py Notification"
           }
         ]
       }

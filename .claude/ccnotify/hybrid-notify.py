@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
 CCNotify Hybride - Combine notifications Windows + Terminal pour WSL
 """
@@ -8,6 +9,12 @@ import sys
 import subprocess
 import time
 from datetime import datetime
+
+# Fix Windows console encoding
+if sys.platform == 'win32':
+    import io
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
 
 def send_windows_popup(title, message):
     """Envoie une notification popup Windows"""
